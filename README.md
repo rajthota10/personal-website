@@ -1,326 +1,114 @@
-# Prist | A Gatsby & Prismic Starter
+<p align="center">
+  <a href="https://cara.lekoarts.de">
+    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Starter Portfolio: Cara
+</h1>
 
-A light-themed starter powered by [Gatsby v2](https://www.gatsbyjs.org) and [Prismic](https://prismic.io/) to showcase portfolios and blogs.
+<p align="center">
+  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
+  </a>
+  <a href="https://github.com/sponsors/LekoArts">
+    <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/LekoArts">
+  </a>
+  <a href="https://www.lekoarts.de?utm_source=cara&utm_medium=Starter">
+    <img alt="Website" src="https://img.shields.io/badge/-website-blue">
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
+    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
+  </a>
+</p>
 
-<img width="1280" alt="prist" src="https://user-images.githubusercontent.com/5288685/63654882-51787e00-c746-11e9-9e9e-2ab823129d93.png">
+Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara).
 
+[**Demo Website**](https://cara.lekoarts.de)
 
-### 👩‍💻 [Demo website](http://prist.marguerite.io)
+Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=cara&utm_medium=Starter).
 
 ## ✨ Features
 
-- Landing page with customizable Hero, Portfolio preview, and About component.
-- [Emotion](https://emotion.sh/docs/styled) styled components
-- Blog layout and pages
-- Portfolio layout and pages
-- Google Analytics
-- Mobile ready
+- Theme UI-based theming
+- react-spring Parallax Effect
+- CSS Animations on Shapes
 
 ## 🚀 Getting Started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/margueriteroth/gatsby-prismic-starter-prist)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/LekoArts/gatsby-starter-portfolio-cara)
 
-1. **Create a Gatsby site.**
+### 1. **Create a Gatsby site.**
 
-Use the Gatsby CLI to create a new site, specifying this project. If you don't have the CLI installed already, see [Gastby instructions](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli).
-
-```sh
-gatsby new YOUR-PROJECT-NAME https://github.com/margueriteroth/gatsby-prismic-starter-prist
-```
-
-2. **Start developing.**
-
-Navigate into your new site's directory, install node modules, and start it up.
+Use `git` to clone the site and navigate into it:
 
 ```sh
-cd YOUR-PROJECT-NAME
-npm install
-gatsby develop
+git clone https://github.com/LekoArts/gatsby-starter-portfolio-cara project-name
+cd project-name
 ```
 
-3. **Open the code and start customizing!**
+### 2. **Install dependencies.**
+
+If you use npm 7 or above use the `--legacy-peer-deps` flag. If you use npm 6 you can use `npm install`.
+
+```sh
+npm install --legacy-peer-deps
+```
+
+### 3. **Open the code and start customizing!**
+
+Start the site by running `npm run develop`.
 
 Your site is now running at `http://localhost:8000`!
 
-_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can check out this [shorter](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.com/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
 
+## 📝 Using and modifying this starter
 
-## 👩‍🎤 Configuring Prismic
+**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) to understand how to customize the underlying theme!
 
-1. **Create account and repo**
+This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara).
 
-Head over to [Prismic](https://prismic.io/signup) and create your new account. Once you have an account, create a new repository.
+Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
 
-2. **Add the repo to your new project**
+### Changing content
 
-In your `gatsby-config.js` file, add your Prismic Repo name to the `repositoryName` field:
+The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overridden all files for you already.
 
-```
-`gatsby-plugin-sharp`,
-    {
-        resolve: 'gatsby-source-prismic-graphql',
-        options: {
-            repositoryName: 'REPO-NAME', // (REQUIRED, replace with your own)
-        }
-    },
-```
-3. **Define your Custom Types**
+You have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:
 
-This starter uses 3 Custom Types:
-![image](https://user-images.githubusercontent.com/5288685/62646196-c01ea480-b91b-11e9-8d30-d9fbf8d1df36.png)
+```md
+## Projects
 
-Create the three following Custom Types by selecting "Create New" in the top right of your screen, and selecting either Repeatable Type or Single Type.
-
-**1. Homepage** (Single)
-![image](https://user-images.githubusercontent.com/5288685/65046592-f265ed80-d92e-11e9-8700-4602b9038c0d.png)
-In the right panel, select *JSON editor* and paste the following:
-```
-{
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "homepage"
-      }
-    },
-    "hero_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "heading1, hyperlink",
-        "allowTargetBlank" : true,
-        "label" : "hero title",
-        "placeholder" : "Hello world"
-      }
-    },
-    "hero_button_text" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "hyperlink",
-        "label" : "hero button text",
-        "placeholder" : "Click me!"
-      }
-    },
-    "hero_button_link" : {
-      "type" : "Link",
-      "config" : {
-        "allowTargetBlank" : true,
-        "label" : "hero button link",
-        "placeholder" : "Click me!"
-      }
-    },
-    "content" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank" : true,
-        "label" : "content"
-      }
-    },
-    "about_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading3",
-        "label" : "about title",
-        "placeholder" : "About"
-      }
-    },
-    "about_bio" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, preformatted, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank" : true,
-        "label" : "about bio",
-        "placeholder" : "Lorem ipsum..."
-      }
-    },
-    "about_links" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "about_link" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "hyperlink",
-              "allowTargetBlank" : true,
-              "label" : "about link",
-              "placeholder" : "ie. Github"
-            }
-          }
-        },
-        "label" : "about links"
-      }
-    }
-  }
-}
+<ProjectCard title="Freiheit" link="https://www.behance.net/gallery/58937147/Freiheit" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
+This project is my entry to Adobe's #ChallengeYourPerspective contest.
+</ProjectCard>
 ```
 
-**2. Post** (Repeatable)
-```
-{
-  "Main" : {
-    "post_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
-        "label" : "post title"
-      }
-    },
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "post uid"
-      }
-    },
-    "post_category" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading5",
-        "label" : "post category"
-      }
-    },
-    "post_preview_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, strong, em, hyperlink, list-item",
-        "label" : "post preview description"
-      }
-    },
-    "post_author" : {
-      "type" : "Select",
-      "config" : {
-        "options" : [ "Prist Team", "Marguerite Roth" ],
-        "default_value" : "Prist Team",
-        "label" : "post author"
-      }
-    },
-    "post_hero_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "post hero image"
-      }
-    },
-    "post_hero_annotation" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading6, strong, em, hyperlink",
-        "allowTargetBlank" : true,
-        "label" : "post hero annotation"
-      }
-    },
-    "post_body" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank" : true,
-        "label" : "post body"
-      }
-    },
-    "post_date" : {
-      "type" : "Date",
-      "config" : {
-        "label" : "post date"
-      }
-    }
-  }
-}
-```
+### Change your `static` folder
 
-**3. Project** (Repeatable)
-```
-{
-  "Main" : {
-    "project_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1",
-        "label" : "project title"
-      }
-    },
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "project uid"
-      }
-    },
-    "project_category" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading5",
-        "label" : "project category"
-      }
-    },
-    "project_preview_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, strong, em, hyperlink",
-        "allowTargetBlank" : true,
-        "label" : "project preview description"
-      }
-    },
-    "project_preview_thumbnail" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "project preview thumbnail"
-      }
-    },
-    "project_hero_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "project hero image"
-      }
-    },
-    "project_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank" : true,
-        "label" : "project description"
-      }
-    },
-    "project_post_date" : {
-      "type" : "Date",
-      "config" : {
-        "label" : "project post date"
-      }
-    }
-  }
-}
-```
+The `static` folder contains the icons, social media images and `robots.txt`. Don't forget to change these files, too! You can use [Real Favicon Generator](https://realfavicongenerator.net/) to generate the image files inside `static`.
 
----
+## 🤔 Questions or problems?
 
-# Tips & Common issues:
+If you have general questions or need help with Gatsby, please go to one of the [support platforms](https://www.gatsbyjs.com/contributing/community/#where-to-get-support) mentioned in Gatsby's documentation. If you have a specific question about this project, you can head to the [GitHub Discussions](https://github.com/LekoArts/gatsby-themes/discussions) of the repository.
 
-Thank you to everyone for contributing!
+## 🎓 Learning Gatsby
 
-#### Prismic Data sourcing problems:
+Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.com/).
 
-Gatsby needs Prismic to return data, meaning the field cannot be left empty. 
+### Themes
 
-From [@georgex1999](https://github.com/georgex1999)
-* If you, like me, are new to prismic.io.. you can't just setup the Custom types as stated in the readme you also need to add Content to them and Publish. This may seem obvious but stumped me for a while!
-* As far as I could tell you need to fill in ALL the fields with content to get the site up and running. Otherwise you get a NULL value error.
-* I had an error that stumped me for a while and it was because I hadn't added the link properly to the social media link. I'll attach a screenshot of this in case it catches anyone else out and the error it brings up.
-![image](https://user-images.githubusercontent.com/5288685/86611700-0857a400-bf7d-11ea-9ec1-4f02f874e5af.png)
-https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-578314236
+To learn more about Gatsby themes specifically, I recommend checking out the [theme docs](https://www.gatsbyjs.com/docs/themes/).
 
+### General
 
-From [@kylemhudson](https://github.com/kylemhudson)
-* I'd recommend adding a few more points to the end of "3. Define your Custom Types" telling the user to fill out at least enough content in the Custom Types to populate one of each type, and definitely show adding the URL to the About section. Adding enough content to everything else doesn't do it, you have to add the URL type within About for the project to work.
-https://github.com/margueriteroth/gatsby-prismic-starter-prist/issues/5#issuecomment-653038425
+- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
+- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _How-to Guides_ and _Reference_ items in the primary navigation.
 
----
+## 🌟 Supporting me
 
-I've had issues fetching updated data from Prismic. Running `gatsby clean` clears the cache.
+Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
 
-Additionally, clearing the cache, node modules, and package-lock.json can also clear your slate. 
-1. `rm -rf node_modules .cache package-lock.json`
-2. `npm install`
-
+Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
