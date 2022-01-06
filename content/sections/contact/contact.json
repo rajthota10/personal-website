@@ -3,11 +3,11 @@
   "email": "rajthota@berkeley.edu",
   "description": "",
   "image": {
-    "src": "../../images/favicon.png",
+    "src": "../../images/raj.jpg",
     "alt": "Raj Thota"
   },
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "from": ["LinkedIn", "Github", "Mail"],
     "showIcons": false
   }
 }

@@ -1,9 +1,30 @@
 {
   "interests": [
     {
-      "label": "Website Development",
+      "label": "Python",
       "image": {
-        "src": "../../images/computer.jpeg",
+        "src": "../../images/python.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "C/C++",
+      "image": {
+        "src": "../../images/c++.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "HTML/CSS/JavaScript",
+      "image": {
+        "src": "../../images/html.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Swift (iOS Development)",
+      "image": {
+        "src": "../../images/swift.png",
         "alt": ""
       }
     },
@@ -15,51 +36,30 @@
       }
     },
     {
-      "label": "Product Management",
+      "label": "Database (SQL/NoSQL)",
       "image": {
-        "src": "../../images/nail-polish.png",
+        "src": "../../images/sql.png",
         "alt": ""
       }
     },
     {
-      "label": "Mobile Development",
+      "label": "React, Angular",
       "image": {
-        "src": "../../images/medium.png",
+        "src": "../../images/react.png",
         "alt": ""
       }
     },
     {
-      "label": "Scripting",
+      "label": "Flask, Django",
       "image": {
-        "src": "../../images/gem-stone.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Databases",
-      "image": {
-        "src": "../../images/mobile-phone.png",
+        "src": "../../images/flask.png",
         "alt": ""
       }
     },
     {
       "label": "APIs",
       "image": {
-        "src": "../../images/mobile-phone.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Agile Methodology",
-      "image": {
-        "src": "../../images/mobile-phone.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "AWS",
-      "image": {
-        "src": "../../images/mobile-phone.png",
+        "src": "../../images/fire.png",
         "alt": ""
       }
     }

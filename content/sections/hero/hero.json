@@ -12,7 +12,7 @@
   },
   "description": "I love programming, developing/growing products, and using my technical expertise to make the world a better place.",
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "from": ["LinkedIn", "Github", "Mail"],
     "showIcons": true
   }
 }

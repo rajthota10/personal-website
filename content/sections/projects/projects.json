@@ -2,39 +2,39 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
-      "title": "Add content and deploy!",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "category": "Hackathon Project",
+      "title": "Food for Thought",
+      "description": "Created web application allowing users to identify harmful ingredients/allergens in their food by scanning label. To provide more personalized results, created profile system allowing users to input pertinent medical information. Placed 2nd at hackathon with ~200 participants.",
+      "tags": ["Django", "Google Cloud Vision API", "Beatiful Soup"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup"
+        "src": "../../images/FFT.png",
+        "alt": "Food For Thought"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/rajthota10/foodforthought"
         },
         {
           "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
+          "url": "https://www.youtube.com/watch?v=pnL0aKBVFDY"
         }
       ]
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "category": "Strategy Consulting Project",
+      "title": "Blue Origin - Killer Application",
+      "description": "Evaluated viability of potential commercial space ventures including space-based solar power, silicon mining. Conducted competitive landscape + internal analysis on company operations; summarized findings in a 30-page report presented to Blue Origin employees.",
+      "tags": ["Internal Analysis", "Competitive Landscape Analysis"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../images/bo.jpeg",
         "alt": "Extendable Layout"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "external",
+          "url": "https://docs.google.com/presentation/d/17dAxTYm1G-t6C6VGt_OwXFnytpu8lN4I1H_5vYs_qR8/edit?usp=sharing"
         }
       ]
     }
@@ -42,6 +42,6 @@
   "button": {
     "visible": true,
     "label": "Visit on Github",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "url": "https://github.com/rajthota10"
   }
 }
