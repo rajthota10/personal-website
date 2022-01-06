@@ -1,0 +1,18 @@
+{
+  "intro": "Hi!",
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "I'm Raj Thota.",
+  "subtitle": {
+    "prefix": "",
+    "highlight": "Welcome",
+    "suffix": " To my Corner of the Internet."
+  },
+  "description": "I love programming, developing/growing products, and using my technical expertise to make the world a better place.",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "showIcons": true
+  }
+}

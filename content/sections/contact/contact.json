@@ -1,0 +1,13 @@
+{
+  "name": "Raj Thota",
+  "email": "rajthota@berkeley.edu",
+  "description": "",
+  "image": {
+    "src": "../../images/favicon.png",
+    "alt": "Raj Thota"
+  },
+  "socialProfiles": {
+    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "showIcons": false
+  }
+}

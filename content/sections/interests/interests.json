@@ -1,0 +1,67 @@
+{
+  "interests": [
+    {
+      "label": "Website Development",
+      "image": {
+        "src": "../../images/computer.jpeg",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Machine Learning",
+      "image": {
+        "src": "../../images/ml.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Product Management",
+      "image": {
+        "src": "../../images/nail-polish.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Mobile Development",
+      "image": {
+        "src": "../../images/medium.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Scripting",
+      "image": {
+        "src": "../../images/gem-stone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Databases",
+      "image": {
+        "src": "../../images/mobile-phone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "APIs",
+      "image": {
+        "src": "../../images/mobile-phone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Agile Methodology",
+      "image": {
+        "src": "../../images/mobile-phone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "AWS",
+      "image": {
+        "src": "../../images/mobile-phone.png",
+        "alt": ""
+      }
+    }
+  ]
+}
